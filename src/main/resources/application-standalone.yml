@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: circleDevTz
+  datasource:
+    url: jdbc:postgresql://localhost:5434/circledev
+    username: circledev
+    password: circledev
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+  flyway:
+    user: circledev
+    password: circledev
+    url: jdbc:postgresql://localhost:5434/circledev
+    locations: classpath:db/migration
+    enabled: true
+    schemas: circledev
+    validate-on-migrate: false
+
+server:
+  port: 8084
+
