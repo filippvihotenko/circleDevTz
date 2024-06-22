@@ -10,7 +10,6 @@ public interface ProductService
 {
     List<Product> findAllProducts();
 
-
     void update(UUID uuid,Product product);
 
     Product create(Product product);

@@ -5,6 +5,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
 
+import java.time.ZonedDateTime;
 import java.util.Set;
 import java.util.UUID;
 
@@ -27,6 +28,9 @@ public class Product
     @NotNull
     @Size(max = 200)
     private String description;
+
+    @Column(name = "timestamp")
+    private ZonedDateTime createdAt;
 
 
     @ManyToMany(mappedBy = "products")

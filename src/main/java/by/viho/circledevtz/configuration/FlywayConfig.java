@@ -1,3 +1,4 @@
+
 package by.viho.circledevtz.configuration;
 
 import org.flywaydb.core.Flyway;
@@ -15,9 +16,7 @@ public class FlywayConfig
 
         flyway.migrate();
     }
-
-
-
 }
+
 
 
